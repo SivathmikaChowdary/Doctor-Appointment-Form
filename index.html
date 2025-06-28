@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Appointment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+    }
+    .image-container {
+      margin-right: 40px;
+    }
+    .image-container img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .form-container {
+      max-width: 500px;
+    }
+    h2 {
+      border-bottom: 2px solid #800000;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="doctor.png" alt="Doctor Image">
+    </div>
+    <div class="form-container">
+      <h2>Doctor Appointment Form</h2>
+      <form>
+        <label>Appointment Date
+          <input type="date" required>
+        </label>
+        <label>Appointment Time
+          <input type="time" required>
+        </label>
+        <label>Name
+          <input type="text" placeholder="First" required>
+          <input type="text" placeholder="Last" required>
+        </label>
+        <label>Gender
+          <input type="radio" name="gender"> Male
+          <input type="radio" name="gender"> Female
+        </label>
+        <label>Phone
+          <input type="tel" placeholder="Phone number" required>
+        </label>
+        <label>Address
+          <input type="text" placeholder="City">
+          <input type="text" placeholder="State">
+        </label>
+        <label>Your Query
+          <textarea placeholder="Enter your concern..."></textarea>
+        </label>
+        <label>Appointment Type</label>
+        <input type="checkbox"> Cervix checkup<br>
+        <input type="checkbox"> Heart checkup<br>
+        <input type="checkbox"> Eye check-up<br>
+        <input type="checkbox"> Hearing Test<br><br>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
